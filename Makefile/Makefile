@@ -37,7 +37,7 @@ run:$(PROJECT_NAME)
 
 # Document the code using Doxygen
 doc:
-	make -C ./documentation
+	make -C 
 
 # Build and run the unit tests
 test:$(BUILD)
@@ -46,8 +46,8 @@ test:$(BUILD)
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+	rm -rf 
 
 # Create new build folder if not present
 $(BUILD):
-	mkdir build
+	mkdir 
