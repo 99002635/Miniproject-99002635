@@ -4,19 +4,6 @@
 #include<stdlib.h>
 #include<time.h>
 
-void setcolor(int ForgC)
-{ WORD wColor;
-HANDLE hStdOut=GetStdHandle(STD_OUTPUT_HANDLE);
-CONSOLE_SCREEN_BUFFER_INFO csbi;
-
-if(GetConsoleScreenBufferInfo(hStdOut,&csbi))
-{
-	wColor=(csbi.wAttributes & 0xB0)+(ForgC & 0x0B);
-//	SetConsoleTextAttributes(hStdOut,wColor);
-	SetConsoleTextAttribute(hStdOut,wColor);
-	
-}
-}
 
 void login()
 {
