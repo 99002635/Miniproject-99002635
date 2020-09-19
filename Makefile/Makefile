@@ -1,17 +1,13 @@
-SRC = src/operations.c\
-main.c
+SRC = src/operation.c\
+src/main.c
 
-INC= -Iinc
+INC = -Iinclude\
 
-PROJECT_NAME =operations.out
+PROJECT_NAME = OPERATION.out
 
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
-	
+
 run:$(PROJECT_NAME)
-	./$(PROJECT_NAME)
-doc:
-	make -C documentation
-	
-clean:
-	rm -f $(PROJECT_NAME)
+	./${PROJECT_NAME}
+
